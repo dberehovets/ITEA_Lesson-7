@@ -14,11 +14,3 @@ class DBConn:
         self.conn.close()
         if exc_val:
             raise
-
-
-# db = "L7_DB.db"
-# with DBConn(db) as conn:
-#     cursor = conn.cursor()
-#     cursor.execute("SELECT * FROM employee")
-#     for i in cursor:
-#         print(i)
